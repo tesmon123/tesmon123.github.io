@@ -35,7 +35,7 @@ nav {
 }
 
 .logo {
-    width: 140px;
+    width: 100px;
 }
 
 nav ul li {
@@ -405,6 +405,12 @@ nav .fas {
 @media only screen and (max-width:600px) {
 
 
+    .row {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+    }
 
     .header-text {
         margin-top: 100%;
@@ -420,6 +426,7 @@ nav .fas {
     nav .fas {
         display: block;
         font-size: 25px;
+        margin-right: 23px;
 
     }
 
