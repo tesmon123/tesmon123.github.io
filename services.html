@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal portfolio website footen</title>
+    <link rel="stylesheet" href="services.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/nft .png" class="logo">
+                <ul id="sidemenu">
+
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="services.html">services</a></li>
+                    <li><a href="work.html">portfolio</a></li>
+                    <li><a href="contact.html">contact</a></li>
+
+
+                    <i class="" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div id="services">
+
+                <div class="container">
+                    <h1 class="sub-title">MY SERVICES</h1>
+                    <div class="services-list">
+                        <div>
+                            <i class=""></i>
+                            <h2>Antivirus and Patch Management: </h2>
+                            <p> Implement an antivirus solution to protect against </p>
+                            <p> malware and ensure it is regularly updated across all IT assets. </p>
+                            <p>Employ a patch management system to keep operating systems and </p>
+                            <p>software up to date with the latest security patches and fixes.</p>
+                            <a href="#"></a>
+                        </div>
+                        <div>
+                            <i class=""></i>
+                            <h2>Software Distribution and Installation:</h2>
+                            <p> Utilize software deploymenttools to distribute and install software automatically and
+                                efficiently</p>
+                            <p> across the organization.This could include using tools like Microsoft System Center </p>
+                            <p> Configuration Manager (SCCM) or similar solutions.</p>
+                            <a href="#"></a>
+                        </div>
+                        <div>
+                            <i class=""></i>
+                            <h2>Reporting and Analytics:</h2>
+                            <p>Utilize an IT asset management system or reporting</p>
+                            <p> tools to aggregate IT asset information into various report formats.</p>
+                            <p>This will help you gain insights into asset utilization, license compliance,</p>
+                            <p>and optimize inventory management.</p>
+                            <a href="#"></a>
+                        </div>
+                        <div>
+                            <i class=""></i>
+                            <h2>Remote Administration:</h2>
+                            <p> Implement remote administration tools such as remote desktop software or</p>
+                            <p> remote management tools to perform operations on remote PCs from the administrator's
+                                desk.
+                            </p>
+                            <p> will allow for efficient troubleshooting, software installation, and configuration
+                                management.
+                            </p>
+                            <a href="#"></a>
+                        </div>
+                        <div>
+                            <i class=""></i>
+                            <h2>Multi-Platform Support:</h2>
+                            <p> Ensure that the solutions you implement support Windows, Linux, and Macintosh operating
+                                systems.
+                            </p>
+                            <p> This includes compatibility with the respective agent software, monitoring tools, and
+                                deployment
+                                mechanisms.</p>
+                            <a href="#"></a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <script>
+
+                var tablinks = document.getElementsByClassName("tab-links");
+                var tabcontents = document.getElementsByClassName("tab-contents");
+
+                function opentab(tabname) {
+                    for (tablink of tablinks) {
+                        tablink.classList.remove("active-link");
+                    }
+                    for (tabcontent of tabcontents) {
+                        tabcontent.classList.remove("active-tab");
+                    }
+                    event.currentTarget.classList.add("active-link");
+                    document.getElementById(tabname).classList.add("active-tab");
+                }
+
+            </script>
+
+            <script>
+
+                var sidemenu = document.getElementById("sidemenu");
+
+                function openmenu() {
+                    sidemenu.style.right = "0";
+
+                }
+                function closemenu() {
+                    sidemenu.style.right = "-200px";
+
+                }
+
+            </script>
+
+</body>
+
+</html>
